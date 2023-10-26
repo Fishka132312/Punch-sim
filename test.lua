@@ -11,17 +11,23 @@ local Section = MainTab:AddSection({
 	Name = "Main"
 })
 
+MainTab:AddButton({
+	Name = "Test",
+	Callback = function()
+      while true do 
+		game:GetService("ReplicatedStorage"):WaitForChild("Events"):WaitForChild("DamageIncreaseOnClickEvent"):FireServer()
+wait(0) 
+end
+  	end,   
+})
+
 MainTab:AddToggle({
 	Name = "This is a toggle!",
 	Default = false,
 	Callback = function(Value)
-		_G.a = true
-while _G.a and task.wait(0) do
+		CoolToggle:Set(false)
 		game:GetService("ReplicatedStorage"):WaitForChild("Events"):WaitForChild("DamageIncreaseOnClickEvent"):FireServer()
-	else
-		_G.a = false
-while _G.a and task.wait(0) do
-	game:GetService("ReplicatedStorage"):WaitForChild("Events"):WaitForChild("DamageIncreaseOnClickEvent"):FireServer()
-end
+		CoolToggle:Set(true)
+		game:GetService("ReplicatedStorage"):WaitForChild("Events"):WaitForChild("DamageIncreaseOnClickEvent"):FireServer()
 	end    
 })

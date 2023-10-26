@@ -11,16 +11,6 @@ local Section = MainTab:AddSection({
 	Name = "Main"
 })
 
-MainTab:AddButton({
-	Name = "Test",
-	Callback = function()
-      while true do 
-		game:GetService("ReplicatedStorage"):WaitForChild("Events"):WaitForChild("DamageIncreaseOnClickEvent"):FireServer()
-wait(0) 
-end
-  	end,   
-})
-
 MainTab:AddToggle({
 	Name = "This is a toggle!",
 	Default = false,

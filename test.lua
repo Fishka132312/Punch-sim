@@ -12,10 +12,25 @@ local Section = MainTab:AddSection({
 })
 
 MainTab:AddButton({
-	Name = "Test",
+	Name = "Auto clicker",
 	Callback = function()
       while true do 
 		game:GetService("ReplicatedStorage"):WaitForChild("Events"):WaitForChild("DamageIncreaseOnClickEvent"):FireServer()
+wait(0) 
+end
+  	end,   
+})
+
+MainTab:AddButton({
+	Name = "Auto win",
+	Callback = function()
+      while true do 
+		local args = {
+			[1] = true
+		}
+		
+		game:GetService("ReplicatedStorage"):WaitForChild("Events"):WaitForChild("PushEvent"):FireServer(unpack(args))
+		
 wait(0) 
 end
   	end,   

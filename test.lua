@@ -22,5 +22,6 @@ while _G.a and task.wait(0) do
 		_G.a = false
 while _G.a and task.wait(0) do
 	game:GetService("ReplicatedStorage"):WaitForChild("Events"):WaitForChild("DamageIncreaseOnClickEvent"):FireServer()
+end
 	end    
 })

@@ -225,3 +225,5 @@ TpTab:AddButton({
 		game:GetService("ReplicatedStorage"):WaitForChild("Events"):WaitForChild("TeleportEvent"):InvokeServer(unpack(args))
   	end,   
 })
+
+OrionLib:Init()

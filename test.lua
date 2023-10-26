@@ -43,12 +43,13 @@ local TpTab = Window:MakeTab({
 })
 
 local Section = TpTab:AddSection({
-	Name = "Tp"
+	Name = "Teleport"
 })
 
 TpTab:AddButton({
 	Name = "Forest (Golden, Gem shop)",
 	Callback = function()
+		wait(0.1)
 		local args = {
 			[1] = "Teleport",
 			[2] = 1
@@ -61,6 +62,7 @@ TpTab:AddButton({
 TpTab:AddButton({
 	Name = "Desert (Dengeous)",
 	Callback = function()
+		wait(0.1)
 		local args = {
 			[1] = "Teleport",
 			[2] = 2
@@ -73,6 +75,7 @@ TpTab:AddButton({
 TpTab:AddButton({
 	Name = "Cave (Rb, Merge craft)",
 	Callback = function()
+		wait(0.1)
 		local args = {
 			[1] = "Teleport",
 			[2] = 3
@@ -85,6 +88,7 @@ TpTab:AddButton({
 TpTab:AddButton({
 	Name = "Ocean (Power core, Perks)",
 	Callback = function()
+		wait(0.1)
 		local args = {
 			[1] = "Teleport",
 			[2] = 4
@@ -97,6 +101,7 @@ TpTab:AddButton({
 TpTab:AddButton({
 	Name = "Candy (Wishing Well, Pet Lvl)",
 	Callback = function()
+		wait(0.1)
 		local args = {
 			[1] = "Teleport",
 			[2] = 5
@@ -109,6 +114,7 @@ TpTab:AddButton({
 TpTab:AddButton({
 	Name = "Snow (Equip Shop)",
 	Callback = function()
+		wait(0.1)
 		local args = {
 			[1] = "Teleport",
 			[2] = 6
@@ -121,6 +127,7 @@ TpTab:AddButton({
 TpTab:AddButton({
 	Name = "Toy (Hacker)",
 	Callback = function()
+		wait(0.1)
 		local args = {
 			[1] = "Teleport",
 			[2] = 7
@@ -133,6 +140,7 @@ TpTab:AddButton({
 TpTab:AddButton({
 	Name = "Farm (Miner, Jester)",
 	Callback = function()
+		wait(0.1)
 		local args = {
 			[1] = "Teleport",
 			[2] = 8
@@ -145,6 +153,7 @@ TpTab:AddButton({
 TpTab:AddButton({
 	Name = "Samurai (Temple)",
 	Callback = function()
+		wait(0.1)
 		local args = {
 			[1] = "Teleport",
 			[2] = 9
@@ -157,6 +166,7 @@ TpTab:AddButton({
 TpTab:AddButton({
 	Name = "Space (Altar)",
 	Callback = function()
+		wait(0.1)
 		local args = {
 			[1] = "Teleport",
 			[2] = 10
@@ -169,6 +179,7 @@ TpTab:AddButton({
 TpTab:AddButton({
 	Name = "Magical Forest",
 	Callback = function()
+		wait(0.1)
 		local args = {
 			[1] = "Teleport",
 			[2] = 11
@@ -181,6 +192,7 @@ TpTab:AddButton({
 TpTab:AddButton({
 	Name = "Heaven",
 	Callback = function()
+		wait(0.1)
 		local args = {
 			[1] = "Teleport",
 			[2] = 12
@@ -193,6 +205,7 @@ TpTab:AddButton({
 TpTab:AddButton({
 	Name = "Underworld",
 	Callback = function()
+		wait(0.1)
 		local args = {
 			[1] = "Teleport",
 			[2] = 13
@@ -205,6 +218,7 @@ TpTab:AddButton({
 TpTab:AddButton({
 	Name = "Laboratory",
 	Callback = function()
+		wait(0.1)
 		local args = {
 			[1] = "Teleport",
 			[2] = 14
@@ -217,6 +231,7 @@ TpTab:AddButton({
 TpTab:AddButton({
 	Name = "Pirate",
 	Callback = function()
+		wait(0.1)
 		local args = {
 			[1] = "Teleport",
 			[2] = 15

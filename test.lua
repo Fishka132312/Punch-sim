@@ -22,9 +22,9 @@ end
 })
 
 MainTab:AddToggle({
-	Name = "lol",
+	Name = "This is a toggle!",
 	Default = false,
 	Callback = function(Value)
-			game:GetService("ReplicatedStorage"):WaitForChild("Events"):WaitForChild("DamageIncreaseOnClickEvent"):FireServer()
-	end
+		game:GetService("ReplicatedStorage"):WaitForChild("Events"):WaitForChild("DamageIncreaseOnClickEvent"):FireServer()
+	end    
 })

@@ -26,5 +26,5 @@ MainTab:AddToggle({
 	Default = false,
 	Callback = function(Value)
 			game:GetService("ReplicatedStorage"):WaitForChild("Events"):WaitForChild("DamageIncreaseOnClickEvent"):FireServer()
-	end,    
+	end
 })

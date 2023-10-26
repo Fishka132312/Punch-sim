@@ -42,8 +42,8 @@ local TpTab = Window:MakeTab({
 	PremiumOnly = false
 })
 
-local Section = MainTab:AddSection({
-	Name = "Teleport"
+local Section = TpTab:AddSection({
+	Name = "Tp"
 })
 
 TpTab:AddButton({
@@ -225,5 +225,3 @@ TpTab:AddButton({
 		game:GetService("ReplicatedStorage"):WaitForChild("Events"):WaitForChild("TeleportEvent"):InvokeServer(unpack(args))
   	end,   
 })
-
-OrionLib:Init()

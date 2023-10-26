@@ -36,17 +36,6 @@ end
   	end,   
 })
 
-MainTab:AddToggle({
-	Name = "This is a toggle!",
-	Default = false,
-	Callback = function(Value)
-		CoolToggle:Set(false)
-		game:GetService("ReplicatedStorage"):WaitForChild("Events"):WaitForChild("DamageIncreaseOnClickEvent"):FireServer()
-		CoolToggle:Set(true)
-		game:GetService("ReplicatedStorage"):WaitForChild("Events"):WaitForChild("DamageIncreaseOnClickEvent"):FireServer()
-	end    
-})
-
 local TpTab = Window:MakeTab({
 	Name = "Teleport",
 	Icon = "rbxassetid://4483345998",
@@ -54,7 +43,7 @@ local TpTab = Window:MakeTab({
 })
 
 local Section = MainTab:AddSection({
-	Name = "Tp"
+	Name = "Teleport"
 })
 
 TpTab:AddButton({

@@ -15,6 +15,12 @@ MainTab:AddToggle({
 	Name = "This is a toggle!",
 	Default = false,
 	Callback = function(Value)
+		_G.a = true
+while _G.a and task.wait(0) do
 		game:GetService("ReplicatedStorage"):WaitForChild("Events"):WaitForChild("DamageIncreaseOnClickEvent"):FireServer()
+	else
+		_G.a = false
+while _G.a and task.wait(0) do
+	game:GetService("ReplicatedStorage"):WaitForChild("Events"):WaitForChild("DamageIncreaseOnClickEvent"):FireServer()
 	end    
 })
